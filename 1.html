@@ -2,8 +2,26 @@
 <html>
    <head>
       <title>Prueba</title>
+      <style>
+         .video-responsive {
+         	height: 0;
+         	overflow: hidden;
+         	padding-bottom: 56.25%;
+         	padding-top: 30px;
+         	position: relative;
+         	}
+         .video-responsive iframe, .video-responsive object, .video-responsive embed {
+         	height: 100%;
+         	left: 0;
+         	position: absolute;
+         	top: 0;
+         	width: 100%;
+         	}
+      </style>
    </head>
    <body>
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/fSjl5lzraJg?si=U5NRvcF423stOIzt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <div class="video-responsive">
+      <iframe src="https://www.youtube.com/embed/fSjl5lzraJg?si=U5NRvcF423stOIzt" frameborder="0" allowfullscreen></iframe>
+      </div>
    </body>
 </html>
